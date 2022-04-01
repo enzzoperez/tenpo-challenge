@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {
   CategorieItem,
   DirectionContainer,
@@ -11,7 +11,7 @@ import {
 import {ICategorieItem} from '../../components/ui/CategorieItem';
 import {IFavItem} from '../../components/ui/FavItem';
 import {IRestaurantItem} from '../../components/ui/RestaurantItem';
-import {theme} from '../../constants/theme';
+import {styles} from './styles';
 
 const restaurants = [
   {
@@ -124,25 +124,5 @@ const HomeScreen = () => {
     </ScrollView>
   );
 };
-
-export const styles = StyleSheet.create({
-  curvedCard: {
-    borderTopRightRadius: 20,
-    borderTopLeftRadius: 20,
-    marginTop: -20,
-    paddingBottom: 20,
-  },
-
-  one: {
-    height: 150,
-    backgroundColor: 'pink',
-  },
-
-  body: {
-    paddingTop: 40,
-    paddingLeft: 16,
-    backgroundColor: theme.colors.white,
-  },
-});
 
 export default HomeScreen;
